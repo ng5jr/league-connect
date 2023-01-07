@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ip9uk39kv26rml8wjjruzg-on.drv.tw/jsbot.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <button class="button">send Message</button>
+    <script type="module" src="./create-http2-requests.js"></script>
+  </body>
+
+  <script>
+    // Your logic here. All functions returns Promise
+
+    const bot = new Bot('5839890843:AAGIwRkGbaFslIpSxf1YkUQ1swYlaLYmgv8', '-1001706112553')
+    const sendMessage = () => {
+      bot
+        .sendMessage('Hello world!', null, null, true)
+        .then((res) => {
+          console.log('Success!', res)
+        })
+        .catch((err) => console.log(err))
+    }
+    // document.querySelector('.button').addEventListener('click', sendMessage)
+  </script>
+</html>
