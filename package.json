@@ -7,6 +7,7 @@
   "module": "./dist/index.js",
   "main": "./dist/index.cjs",
   "scripts": {
+    "start": "node examples/esm/create-http2-requests.js",
     "prepublishOnly": "yarn build",
     "build": "tsup src/index.ts --format esm,cjs --clean --dts --sourcemap",
     "fmt": "prettier --config .prettierrc src/ examples/ jest.config.cjs --write",

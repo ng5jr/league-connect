@@ -2,7 +2,7 @@ import { authenticate, createHttpSession, createHttp2Request } from 'league-conn
 import fetch from 'node-fetch'
 
 // Credentials LOL
-const credentials = await authenticate()
+const credentials = await authenticate({ awaitConnection: true, pollInterval: 5000 })
 const session = await createHttpSession(credentials)
 
 // BOT TELEGRAM
