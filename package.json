@@ -3,6 +3,9 @@
   "version": "6.0.0-rc9",
   "description": "Module for consuming the League of Legends Client APIs",
   "type": "module",
+  "types": "dist/index.d.ts",
+  "module": "./dist/index.js",
+  "main": "./dist/index.cjs",
   "scripts": {
     "prepublishOnly": "yarn build",
     "build": "tsup src/index.ts --format esm,cjs --clean --dts --sourcemap",
